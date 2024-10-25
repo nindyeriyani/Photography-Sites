@@ -1,0 +1,120 @@
+body{
+  background-color: #141414;
+  font-family: sans-serif;
+  color: white;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: #141414;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header nav > div {
+  margin-left: 50px;
+}
+
+header nav > div a {
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+}
+
+header nav > div a:first-child {
+  margin-left: 0;
+}
+
+header nav > div .active {
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+
+header img {
+  height: 25px;
+  width: 25px;
+}
+
+header .social-media img {
+  margin-left: 10px;
+}
+
+main{
+  max-width: 960px;
+  margin: 100px auto 0;
+}
+
+main .photo-container {
+  margin-bottom: 20px;
+}
+
+main .image {
+  position: relative;
+}
+
+main img {
+  border-radius: 20px;
+  object-fit: cover;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: all 1s ease;
+}
+
+main img:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  opacity: 1;
+}
+
+
+main .image .title-image {
+  font-family: Noto Sans, sans-serif;
+  position: absolute;
+  top: 10%;
+  left: 40px;
+  color: white;
+  font-size: 80px;
+  font-weight: 100;
+  line-height: 1.1;
+  width: 50%;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+
+main .image:hover .title-image {
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  main .image .title-image {
+    font-size: 40px;
+  }
+}
+
+
